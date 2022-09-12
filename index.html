@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn.rode.com/website/rode-favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>RØDE Microphones</title>
+    <style type="text/tailwindcss">
+      @font-face {
+        font-family: 'segoe-ui';
+        src: url(./segoe-ui-font/SEGOEUI.TTF);
+      }
+      @font-face {
+        font-family: 'avenir-medium';
+        src: url(./avenir-medium-font/Avenir\ Medium.ttf);
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                cream: '#AD9970',
+                textGrey: '#8C8C8C'
+              },
+              fontFamily: {
+                'segoe-ui' : ['segoe-ui, sans-serif'],
+                'inter': ['Inter, sans-serif'],
+                'avenir': ['avenir-medium, sans-serif']
+              },
+              fontWeight:{
+                light: 400,
+                medium: 500,
+                'semi-bold': 600,
+                bold: 700
+              },
+              backgroundImage: {
+                'first-div-bgi': "url('https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpg')",
+                'second-div-bgi': "url('https://edge.rode.com/images/page/1/modules/5873/rode-nth100-lifestyle-insitu-female-looking-down-grey-1920x700-rgb.jpg')",
+                'third-div-bgi': "url('https://edge.rode.com/images/page/1/modules/5914/rode-nt-usb-webheader-v7-1920x700-rgb.jpg')",
+                'exp-sec-one': "url('https://edge.rode.com/images%2Fpage%2F1%2Fmodules%2F5357%2Fmicrophones-module-1200x300-rgb.png')",
+                'exp-sec-two': "url('https://rode.com/assets/images%2Fpage%2F1%2Fmodules%2F5359%2Finterfaces-module-2022-1200x300-rgb.jpg')",
+                'exp-sec-three': "url('https://edge.rode.com/images%2Fpage%2F1%2Fmodules%2F5361%2Fsoftware-module-2021-1200x300-rgb.png')",
+                'exp-sec-four': "url('https://edge.rode.com/images%2Fpage%2F1%2Fmodules%2F5370%2Faccessories-module-2021-1200x300-rgb.png')",
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+
+    <!-- Navbar Begins Here -->
+    <nav class="p-5 pr-40 pl-40 flex lg:justify-around lg:items-center">
+      <!-- This dic contains logo -->
+      <div> 
+        <!-- img  -->
+        <img src="./assets/logo.svg" alt="logo.svg" class="w-[86px] h-[30px]">
+      </div>
+
+      <!-- nav-links -->
+      <div class="font-inter font-light flex gap-10">
+        <!-- links -->
+        <a href="" class="">PRODUCTS</a>
+        <a href="" class="">USER GUIDES</a>
+        <a href="" class="">SOLUTIONS</a>
+        <a href="" class="">APPAREL</a>
+        <a href="" class="">SUPPORT</a>
+      </div>
+
+      <!-- search icon -->
+      <div class="">
+        <!-- img -->
+        <img src="./assets/search.svg" alt="search.svg" class="w-[27px] h-[27px]">
+      </div>
+
+    </nav>
+    <!-- Navbar Ends Here -->
+
+    <!-- Main Begins Here -->
+    <main>
+      <!-- first div begins here -->
+      <div class="h-[93vh] lg:bg-first-div-bgi lg:bg-no-repeat lg:bg-cover lg:bg-[center_right_-290px] flex flex-col justify-center">
+        <!-- content -->
+        <div class="mr-[12%] self-end flex flex-col items-center">
+          <img src="./assets/rode-caster.svg" alt="rode-caster.svg" class="w-[540px] w-[42]">
+          <h1 class="mt-5 mb-5 font-avenir font-light text-[24px] text-white">The Revolution Is Here</h1>
+          <p class="mb-10 text-textGrey text-[16px] leading-[24px] font-inter font-light ">
+            The RØDECaster pro II is the world's most powerfull all-in-one <br>
+            audio solution for streamers, podcasters, musicians, and creators. <br>
+            Take your content to the next level.
+          </p>
+          <!-- links div -->
+          <div class="">
+            <!-- link -->
+            <a href="" class="text-cream">LEARN MORE
+              <!-- arrow right --><div class="ml-1 mb-[1px] inline-block w-[8px] h-[8px] border-cream border-t-2 border-r-2 rotate-45"></div>
+            </a>
+            <!-- button -->
+            <button class="ml-3 p-[3%] pr-6 pl-6 text-white font-semi-bold bg-cream rounded-3xl hover:text-cream hover:bg-white">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+      <!-- first div ends here -->
+    </main>
+    <!-- Main Ends Here -->
+
+    <!-- Footer Begins Here -->
+    <footer>
+
+    </footer>
+    <!-- Footer Ends Here -->
+    
+</body>
+</html>
